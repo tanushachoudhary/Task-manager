@@ -93,3 +93,17 @@
     @apply shadow-lg scale-[1.02] bg-purple-50 border-purple-100;
   }
 }
+
+/* Dark mode specific styles */
+.dark .category-container,
+.dark .tasks-container {
+  @apply bg-gray-800 bg-opacity-50;
+}
+
+.dark .task-card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark .task-card.dragging {
+  @apply bg-purple-900 bg-opacity-30 border-purple-800;
+}

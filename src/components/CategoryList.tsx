@@ -76,7 +76,7 @@ const CategoryList: React.FC = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">Task Manager</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Task Manager</h1>
         <div className="flex space-x-2">
           <Dialog open={categoryDialogOpen} onOpenChange={setCategoryDialogOpen}>
             <DialogTrigger asChild>
@@ -130,7 +130,7 @@ const CategoryList: React.FC = () => {
       </div>
 
       <div className="grid md:grid-cols-[250px_1fr] gap-6">
-        <div className="border rounded-lg p-4 bg-white shadow-sm">
+        <div className="border rounded-lg p-4 bg-white shadow-sm category-container">
           <Collapsible open={isOpen} onOpenChange={setIsOpen} className="mb-3">
             <div className="flex items-center justify-between">
               <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Categories</h2>
@@ -188,7 +188,7 @@ const CategoryList: React.FC = () => {
           </Collapsible>
         </div>
 
-        <div className="border rounded-lg p-6 bg-white shadow-sm">
+        <div className="border rounded-lg p-6 bg-white shadow-sm tasks-container">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-semibold">
               {selectedCategory === 'all' 
