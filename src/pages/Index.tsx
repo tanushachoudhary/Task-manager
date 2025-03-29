@@ -4,7 +4,7 @@ import Dashboard from '../components/Dashboard';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background transition-colors duration-200">
       <Dashboard />
     </div>
   );
